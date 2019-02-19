@@ -1,0 +1,263 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Repesca33</title>
+	<link rel="stylesheet" href="estilo33.css">
+	<script type="text/javascript" src="repesca33.js"></script>
+</head>
+<body>
+	 <script language="JavaScript">
+
+  </script>
+  <script language="JavaScript1.2" src="mm_menu.js"></script>
+</head>
+<body onload="programilla()" link="#009900" alink="#3b3a30"
+ bgcolor="#c0ded9" text="#f0f0f0" vlink="#3b3a30">
+<table border="0" width="99%">
+  <tbody>
+    <tr>
+      <td style="width: 13px;" align="left" valign="top">
+      <script language="JavaScript1.2">mmLoadMenus();</script>&nbsp; <map
+ name="m_surf">
+      <area shape="poly" coords="2,85,117,94,116,118,2,126,2,85"
+ href="#" alt="" onmouseout="MM_startTimeout();"
+ onmouseover="MM_showMenu(window.mm_menu_0919180908_0,140,105,null,'surf');">
+      <area shape="poly" coords="2,2,116,11,115,38,2,41,2,2" href="#"
+ alt="" onmouseout="MM_startTimeout();"
+ onmouseover="MM_showMenu(window.mm_menu_0919180857_1,137,11,null,'surf');">
+      <area shape="poly" coords="1,42,116,54,116,75,1,83,1,42" href="#"
+ alt="" onmouseout="MM_startTimeout();"
+ onmouseover="MM_showMenu(window.mm_menu_0918205123_1,141,61,null,'surf');">
+      </map>
+      <script language="JavaScript1.2">mmLoadMenus();</script> <map
+ name="m_surf">
+      <area shape="poly" coords="2,85,117,94,116,118,2,126,2,85"
+ href="#" alt="" onmouseout="MM_startTimeout();"
+ onmouseover="MM_showMenu(window.mm_menu_0919180908_0,140,105,null,'surf');">
+      <area shape="poly" coords="2,2,116,11,115,38,2,41,2,2" href="#"
+ alt="" onmouseout="MM_startTimeout();"
+ onmouseover="MM_showMenu(window.mm_menu_0919180857_1,137,11,null,'surf');">
+      <area shape="poly" coords="1,42,116,54,116,75,1,83,1,42" href="#"
+ alt="" onmouseout="MM_startTimeout();"
+ onmouseover="MM_showMenu(window.mm_menu_0918205123_1,141,61,null,'surf');">
+      </map>
+      </td>
+      <td style="width: 885px;" align="center" height="127" valign="top">
+      <p><a href="index33.html"><img src="logo.png"></a></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 13px;" align="left" height="242" valign="top">
+      <p><br>
+&nbsp;</p>
+      </td>
+      <td style="width: 885px;" align="left" height="242" valign="top"><!-- InstanceBeginEditable name="meollo" -->
+      <p align="center">
+      <script language="Javascript">	
+	
+	
+	function chou(tope){
+		//introducindo o tope, xenera enteiro aleatorio
+		with(Math){
+		var aleatorio=round(random()*tope);
+		}
+		//alert(aleatorio);
+		return aleatorio;
+	}
+	var m,n;
+	function programilla(){
+		 m=chou(10);
+		 n=chou(19);
+	
+
+		presentar(m,n);
+
+		
+	}
+	
+	function presentar(a,b){
+	
+			var ecuacion=a+" + "+b+" = ";
+			document.enteiros.proposta.value=ecuacion;
+	}
+	
+	var i=0;
+	
+	function comparar(){
+	var sol=m+n;
+
+
+		if(sol==document.enteiros.eles.value)
+		{
+		
+		felicitar();
+		document.enteiros.eles.value="";
+		
+		}
+		else
+		{
+			i++;
+
+		document.enteiros.comentario.value=document.enteiros.eles.value;
+		document.enteiros.comentario.value+=" Has fallado "+i;
+		document.enteiros.comentario.value+=" Fallos";
+		document.enteiros.eles.value="";
+	
+		}
+	
+	}
+	
+	function felicitar(){
+	 alert("Has acertado vamos con el siguente");
+	
+	 document.enteiros.comentario.value="";
+	 programilla();
+	 }
+	
+	</script>
+      <font color="#ff0000">Operaciones con sumas</font></p>
+      <p align="center" color="#ff0000">De certo que sabes facer estas contas: </p>
+      <form name="enteiros">
+        <p align="center"> <input readonly="readonly" name="proposta"
+ size="20" onfocus="this.blur()" type="text"> <input name="eles"
+ size="3" value="" type="text"> </p>
+        <p align="center"><a href="javascript:comparar()">Comprobar el resultado</a></p>
+        <div align="center"><font color="#ff0000">Ejercicio:</font> <input
+ name="comentario" readonly="readonly" size="50" type="text"> </div>
+        <p align="center"><a href="javascript:programilla()">Otro ejercicio</a></p>
+      </form>
+	<div class="wrap">
+		<div class="widget">
+			<div class="fecha">
+				<p id="diaSemana" class="diaSemana">Martes</p>
+				<p id="dia" class="dia">27</p>
+				<p>de </p>
+				<p id="mes" class="mes">Octubre</p>
+				<p>del </p>
+				<p id="year" class="year">2015</p>
+			</div>
+	
+			<div class="reloj">
+				<p id="horas" class="horas">11</p>
+				<p>:</p>
+				<p id="minutos" class="minutos">48</p>
+				<p>:</p>
+				<div class="caja-segundos">
+					<p id="ampm" class="ampm">AM</p>
+					<p id="segundos" class="segundos">12</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+ 
+<script type="text/javascript">
+	(function(){
+	var actualizarHora = function(){
+		// Obtenemos la fecha actual, incluyendo las horas, minutos, segundos, dia de la semana, dia del mes, mes y año;
+		var fecha = new Date(),
+			horas = fecha.getHours(),
+			ampm,
+			minutos = fecha.getMinutes(),
+			segundos = fecha.getSeconds(),
+			diaSemana = fecha.getDay(),
+			dia = fecha.getDate(),
+			mes = fecha.getMonth(),
+			year = fecha.getFullYear();
+
+		// Accedemos a los elementos del DOM para agregar mas adelante sus correspondientes valores
+		var pHoras = document.getElementById('horas'),
+			pAMPM = document.getElementById('ampm'),
+			pMinutos = document.getElementById('minutos'),
+			pSegundos = document.getElementById('segundos'),
+			pDiaSemana = document.getElementById('diaSemana'),
+			pDia = document.getElementById('dia'),
+			pMes = document.getElementById('mes'),
+			pYear = document.getElementById('year');
+
+		
+		// Obtenemos el dia se la semana y lo mostramos
+		var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+		pDiaSemana.textContent = semana[diaSemana];
+
+		// Obtenemos el dia del mes
+		pDia.textContent = dia;
+
+		// Obtenemos el Mes y año y lo mostramos
+		var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+		pMes.textContent = meses[mes];
+		pYear.textContent = year;
+
+		// Cambiamos las hora de 24 a 12 horas y establecemos si es AM o PM
+
+		if (horas >= 12) {
+			horas = horas - 12;
+			ampm = 'PM';
+		} else {
+			ampm = 'AM';
+		}
+
+		// Detectamos cuando sean las 0 AM y transformamos a 12 AM
+		if (horas == 0 ){
+			horas = 12;
+		}
+
+		// Si queremos mostrar un cero antes de las horas ejecutamos este condicional
+		// if (horas < 10){horas = '0' + horas;}
+		pHoras.textContent = horas;
+		pAMPM.textContent = ampm;
+
+		// Minutos y Segundos
+		if (minutos < 20){ minutos = "0" + minutos; }
+		if (segundos < 10){ segundos = "0" + segundos; }
+
+		pMinutos.textContent = minutos;
+		pSegundos.textContent = segundos;
+	};
+
+	actualizarHora();
+	var intervalo = setInterval(actualizarHora, 1000);
+}())
+</script>
+
+<p>Como catalogarias esta pagina</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">☺</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var fruits = document.getElementById("myInput").value;
+
+  switch(fruits) {
+    case "Increible":
+    text = "Genial";
+    break;
+    case "Banana":
+      text = "Banana esta bien";
+    break;
+    case "Bien":
+    text = "Algo es algo";
+    break;
+    break;
+	case "Malisima":
+    text = "...";
+    break;
+    case "Pesima":
+    text = "...";
+    break;
+    default:
+    text = "...";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
